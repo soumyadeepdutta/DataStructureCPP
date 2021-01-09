@@ -24,18 +24,21 @@ class Stack:
     def pop(self):
         if self.is_empty:
             print('Underflow')
-            return 0
+            return
         else:
             print('Pop ', self.__arr[self.__top], 'Top ', self.__top)
             self.__arr[self.__top] = None
             self.__top -= 1
 
-    def display(self):
+    def traverse(self):
         if self.is_empty:
             print('Empty')
         else:
             for item in range(self.__top + 1):
                 print(self.__arr[item], end=' ')
+
+    def size(self):
+        print(self.__top + 1)
 
 
 if __name__ == '__main__':
@@ -43,6 +46,9 @@ if __name__ == '__main__':
     print(S.is_empty)
     for i in range(11):
         S.push(i)
+    S.size()
     for i in range(10):
         S.pop()
-    S.display()
+    S.traverse()
+    S.size()
+
