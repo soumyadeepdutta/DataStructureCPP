@@ -2,7 +2,7 @@
 Stack is a Linear data structure 
 order: LIFO
 properties: top, isEmpty
-operaations: push, pop 
+operations: push, pop
 */
 
 #include <iostream>
@@ -11,7 +11,7 @@ using namespace std;
 // maximum capacity of stack
 #define MAX 10
 
-// stcak array implementation
+// stack array implementation
 class Stack
 {
     // private
